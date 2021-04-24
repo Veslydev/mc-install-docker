@@ -2,7 +2,7 @@ FROM debian:buster-slim
 LABEL maintainer="Parkeymon"
 USER root
 RUN echo "Building..."
-RUN apt-get -y install libpcre2-8-0
+RUN apt -y update
 RUN apt-get -y install wget 
 RUN apt -y update
 RUN apt -y --no-install-recommends install curl lib32gcc1 ca-certificates
