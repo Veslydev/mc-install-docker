@@ -15,3 +15,4 @@ RUN apt-get install -y nodejs
 RUN npm -v
 RUN npm install --global yarn
 RUN apt-get -y install jq
+RUN apt-get -y install yq
