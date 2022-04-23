@@ -15,4 +15,4 @@ RUN apt-get install -y nodejs
 RUN npm -v
 RUN npm install --global yarn
 RUN apt-get -y install jq
-RUN apt-get -y install yq
+RUN wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64.tar.gz -O - |  tar xz && mv yq_linux_amd64 /usr/bin/yq
